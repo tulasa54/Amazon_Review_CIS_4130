@@ -95,3 +95,6 @@ for variable_type in ['numeric', 'binary']:
     
 for i in range(len(var_index)):  
   print(i, var_index[i], coeff[i]) 
+
+hdfs df -get hdfs:///reviews_roc.png 
+aws s3 cp reviews_roc.png s3://tc-data 
